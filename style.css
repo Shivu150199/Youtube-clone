@@ -2,7 +2,7 @@
 
 :root {
   --background-color: #0f0f0f;
-  --card-color: #272727;
+  --card-color: grey;
   --font-family: 'Inter', sans-serif;
   --white: #ededed;
   --dim-white: #ededed;
@@ -54,7 +54,7 @@ body {
 }
 .voice-search {
   background: var(--card-color);
-  border-radius:50%;
+  border-radius: 50%;
 }
 .brand-container {
   display: flex;
@@ -117,4 +117,135 @@ sup {
 
 .icon:hover {
   background: var(--card-color);
+}
+/* next section */
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  width: 100%;
+  height: 90vh;
+  border: 1ps solid blue;
+}
+.left {
+  /* flex: 0.15; */
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+::-webkit-scrollbar {
+  display: none;
+  color: var(--white);
+}
+.right {
+  /* flex: 0.7; */
+  width: 100%;
+}
+
+.left-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 5px 10px 5px 15px;
+  color: var(--white);
+  border-radius: 5px;
+}
+.left-menu > span {
+  font-size: 0.8rem;
+}
+.left-menu > p {
+  font-size: 0.5rem;
+}
+.active-side {
+  background: var(--card-color);
+}
+
+.left-menu:hover {
+  background: var(--card-color);
+}
+.hz-line {
+  width: 100%;
+  border: 1px solid grey;
+  margin: 0.5rem 0;
+}
+
+.group-2 {
+  color: var(--white);
+  font-size: 0.5rem;
+  /* padding: 0 0 0 10px; */
+}
+.subsprofile {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+}
+.foot-1 {
+  font-size: 0.5rem;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 5px;
+}
+.foot-1 > a {
+  text-decoration: none;
+  color: grey;
+}
+.copyright {
+  font-size: 0.4rem;
+  color: #686868;
+}
+/* right */
+.right {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  overflow:scroll;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 0.2rem;
+}
+.thumbnail {
+  position: relative;
+  border-radius: 0.2rem;
+}
+.thumbnail > img {
+  width: 100%;
+  border-radius: 0.2rem;
+}
+.duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: var(--white);
+  font-size: 0.5rem;
+}
+
+.video-details {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  justify-content: space-between;
+}
+.video-details > img {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+}
+.name {
+  color: var(--white);
+  font-size: 0.6rem;
+}
+.ch-name {
+  color: #686868;
+  font-size: 0.5rem;
+  margin-top: 4px;
 }
